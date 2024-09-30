@@ -3,4 +3,13 @@
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
 	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\USER\Desktop\24-2\STM\ATOM_Study\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\GPIO\GPIO_IOToggle\SW4STM32\STM32F103RB_Nucleo"/>
+		</list>
+	</section>
 </section>

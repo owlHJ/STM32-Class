@@ -1,0 +1,19 @@
+22:28:16 **** Build of configuration Debug for project STM32F103RB_Nucleo ****
+make all 
+arm-none-eabi-gcc "C:/Users/USER/Desktop/24-2/STM/ATOM_Study/STM32Cube_FW_F1_V1.8.0/Projects/STM32F103RB-Nucleo/Examples/GPIO/GPIO_IOToggle/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DUSE_STM32F1xx_NUCLEO -c -I../../../Inc -I../../../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../../../../../../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../../../../../../../Drivers/BSP/STM32F1xx_Nucleo -I../../../../../../../../Drivers/CMSIS/Include -Os -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Example/User/main.d" -MT"Example/User/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Example/User/main.o"
+In file included from ../../../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:130,
+                 from ../../../../../../../../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:29,
+                 from ../../../../../../../../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:27,
+                 from ../../../Inc/stm32f1xx_hal_conf.h:243,
+                 from ../../../../../../../../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../../../Inc/main.h:24,
+                 from C:/Users/USER/Desktop/24-2/STM/ATOM_Study/STM32Cube_FW_F1_V1.8.0/Projects/STM32F103RB-Nucleo/Examples/GPIO/GPIO_IOToggle/Src/main.c:21:
+../../../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:131:10: fatal error: core_cm3.h: No such file or directory
+  131 | #include "core_cm3.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Example/User/subdir.mk:22: Example/User/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:28:17 Build Failed. 2 errors, 0 warnings. (took 664ms)
+

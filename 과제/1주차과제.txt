@@ -1,0 +1,4 @@
+1. Timer1의 채널 1,2,3,4 GPIO 찾기 (힌트 :User Manual)
+
+2. 초음파센서의 시간을 측정하기 위해서 TImer의 어떤 기능을 사용해야할지 
+찾고 원리 설명하기(힌트: Reference Manual)

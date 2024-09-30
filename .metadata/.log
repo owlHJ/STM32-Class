@@ -510,3 +510,472 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\USER\Desktop\
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-30 21:31:21.893
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 372 2024-09-30 21:36:02.385
+!MESSAGE Project 'STM32F103RB_Nucleo' is not open.
+!STACK 0
+java.lang.Exception: Project 'STM32F103RB_Nucleo' is not open.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:186)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.openReadmeFile(AbstractCubeIDEProjectConfigurator.java:1008)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$3.run(MCUProjectImporter.java:387)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.475
+!MESSAGE Orphaned CDT build configuration [fr.ac6.managedbuild.config.gnu.cross.exe.debug.1533305670]: parent extension cfg [fr.ac6.managedbuild.config.gnu.cross.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:246)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:879)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:419)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:405)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:573)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:139)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:509)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:239)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.internal.core.model.CProject.computeSourceRoots(CProject.java:610)
+	at org.eclipse.cdt.internal.core.model.CProject.computeChildren(CProject.java:631)
+	at org.eclipse.cdt.internal.core.model.CProject.buildStructure(CProject.java:595)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:264)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:428)
+	at org.eclipse.cdt.internal.core.model.CElement.getElementInfo(CElement.java:306)
+	at org.eclipse.cdt.internal.core.model.CElement.getElementInfo(CElement.java:296)
+	at org.eclipse.cdt.internal.core.model.Parent.getChildren(Parent.java:57)
+	at org.eclipse.cdt.internal.core.model.CProject.getSourceRoots(CProject.java:471)
+	at org.eclipse.cdt.internal.core.model.CModelManager.create(CModelManager.java:342)
+	at org.eclipse.cdt.internal.core.model.CModelManager.create(CModelManager.java:270)
+	at org.eclipse.cdt.internal.core.model.DeltaProcessor.createElement(DeltaProcessor.java:90)
+	at org.eclipse.cdt.internal.core.model.DeltaProcessor.traverseDelta(DeltaProcessor.java:453)
+	at org.eclipse.cdt.internal.core.model.DeltaProcessor.traverseDelta(DeltaProcessor.java:471)
+	at org.eclipse.cdt.internal.core.model.DeltaProcessor.processResourceDelta(DeltaProcessor.java:433)
+	at org.eclipse.cdt.internal.core.model.CModelManager.resourceChanged(CModelManager.java:931)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.478
+!MESSAGE Missing superclass "fr.ac6.managedbuild.option.gnu.cross.prefix" for "fr.ac6.managedbuild.option.gnu.cross.prefix.1351132126"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.479
+!MESSAGE Missing superclass "fr.ac6.managedbuild.option.gnu.cross.mcu" for "fr.ac6.managedbuild.option.gnu.cross.mcu.756191281"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.480
+!MESSAGE Missing superclass "fr.ac6.managedbuild.option.gnu.cross.board" for "fr.ac6.managedbuild.option.gnu.cross.board.828547454"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.482
+!MESSAGE Missing superclass "fr.ac6.managedbuild.option.gnu.cross.core" for "fr.ac6.managedbuild.option.gnu.cross.core.1083960614"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.483
+!MESSAGE Missing superclass "fr.ac6.managedbuild.option.gnu.cross.instructionSet" for "fr.ac6.managedbuild.option.gnu.cross.instructionSet.1498042886"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.484
+!MESSAGE Missing superclass "fr.ac6.managedbuild.option.gnu.cross.fpu" for "fr.ac6.managedbuild.option.gnu.cross.fpu.947844488"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.485
+!MESSAGE Missing superclass "fr.ac6.managedbuild.option.gnu.cross.floatabi" for "fr.ac6.managedbuild.option.gnu.cross.floatabi.807546513"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.486
+!MESSAGE Missing superclass "fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" for "fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.740791707"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.487
+!MESSAGE Missing superclass "fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" for "fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.1976204389"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.489
+!MESSAGE Missing superclass "fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" for "fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.128656184"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.490
+!MESSAGE Missing superclass "fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" for "fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.1444818185"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.491
+!MESSAGE Missing superclass "fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" for "fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.231156203"
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-09-30 21:36:02.492
+!MESSAGE Missing superclass "fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script" for "fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script.975882890"
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 2 0 2024-09-30 21:36:03.711
+!MESSAGE Unknown value type "" for id gnu.c.link.option.libs on tool fr.ac6.managedbuild.tool.gnu.cross.c.linker
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unknown serialized value type 
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.deserializeValueType(AbstractCubeIDEProjectConfigurator.java:535)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertTool(AbstractCubeIDEProjectConfigurator.java:567)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertBuildConfiguration(AbstractCubeIDEProjectConfigurator.java:453)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.configure(AbstractCubeIDEProjectConfigurator.java:190)
+	at com.st.stm32cube.ide.mcu.converters.sw4stm32.SW4STM32ToCubeIDEProjectConfigurator.configure(SW4STM32ToCubeIDEProjectConfigurator.java:710)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.importProjectAndChildrenRecursively(SmartImportJob.java:461)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob$1.run(SmartImportJob.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 2 0 2024-09-30 21:36:03.712
+!MESSAGE Unknown value type "" for id gnu.c.link.option.paths on tool fr.ac6.managedbuild.tool.gnu.cross.c.linker
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unknown serialized value type 
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.deserializeValueType(AbstractCubeIDEProjectConfigurator.java:535)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertTool(AbstractCubeIDEProjectConfigurator.java:567)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertBuildConfiguration(AbstractCubeIDEProjectConfigurator.java:453)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.configure(AbstractCubeIDEProjectConfigurator.java:190)
+	at com.st.stm32cube.ide.mcu.converters.sw4stm32.SW4STM32ToCubeIDEProjectConfigurator.configure(SW4STM32ToCubeIDEProjectConfigurator.java:710)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.importProjectAndChildrenRecursively(SmartImportJob.java:461)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob$1.run(SmartImportJob.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 2 0 2024-09-30 21:36:03.714
+!MESSAGE Unknown value type "" for id gnu.c.link.option.other on tool fr.ac6.managedbuild.tool.gnu.cross.c.linker
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unknown serialized value type 
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.deserializeValueType(AbstractCubeIDEProjectConfigurator.java:535)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertTool(AbstractCubeIDEProjectConfigurator.java:567)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertBuildConfiguration(AbstractCubeIDEProjectConfigurator.java:453)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.configure(AbstractCubeIDEProjectConfigurator.java:190)
+	at com.st.stm32cube.ide.mcu.converters.sw4stm32.SW4STM32ToCubeIDEProjectConfigurator.configure(SW4STM32ToCubeIDEProjectConfigurator.java:710)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.importProjectAndChildrenRecursively(SmartImportJob.java:461)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob$1.run(SmartImportJob.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 2 0 2024-09-30 21:36:03.715
+!MESSAGE Unknown value type "" for id gnu.cpp.link.option.libs on tool fr.ac6.managedbuild.tool.gnu.cross.cpp.linker
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unknown serialized value type 
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.deserializeValueType(AbstractCubeIDEProjectConfigurator.java:535)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertTool(AbstractCubeIDEProjectConfigurator.java:567)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertBuildConfiguration(AbstractCubeIDEProjectConfigurator.java:453)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.configure(AbstractCubeIDEProjectConfigurator.java:190)
+	at com.st.stm32cube.ide.mcu.converters.sw4stm32.SW4STM32ToCubeIDEProjectConfigurator.configure(SW4STM32ToCubeIDEProjectConfigurator.java:710)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.importProjectAndChildrenRecursively(SmartImportJob.java:461)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob$1.run(SmartImportJob.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 2 0 2024-09-30 21:36:03.716
+!MESSAGE Unknown value type "" for id gnu.cpp.link.option.paths on tool fr.ac6.managedbuild.tool.gnu.cross.cpp.linker
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unknown serialized value type 
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.deserializeValueType(AbstractCubeIDEProjectConfigurator.java:535)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertTool(AbstractCubeIDEProjectConfigurator.java:567)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertBuildConfiguration(AbstractCubeIDEProjectConfigurator.java:453)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.configure(AbstractCubeIDEProjectConfigurator.java:190)
+	at com.st.stm32cube.ide.mcu.converters.sw4stm32.SW4STM32ToCubeIDEProjectConfigurator.configure(SW4STM32ToCubeIDEProjectConfigurator.java:710)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.importProjectAndChildrenRecursively(SmartImportJob.java:461)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob$1.run(SmartImportJob.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 2 0 2024-09-30 21:36:03.718
+!MESSAGE Unknown value type "" for id gnu.cpp.link.option.other on tool fr.ac6.managedbuild.tool.gnu.cross.cpp.linker
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unknown serialized value type 
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.deserializeValueType(AbstractCubeIDEProjectConfigurator.java:535)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertTool(AbstractCubeIDEProjectConfigurator.java:567)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertBuildConfiguration(AbstractCubeIDEProjectConfigurator.java:453)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.configure(AbstractCubeIDEProjectConfigurator.java:190)
+	at com.st.stm32cube.ide.mcu.converters.sw4stm32.SW4STM32ToCubeIDEProjectConfigurator.configure(SW4STM32ToCubeIDEProjectConfigurator.java:710)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.importProjectAndChildrenRecursively(SmartImportJob.java:461)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob$1.run(SmartImportJob.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 4 0 2024-09-30 21:36:03.721
+!MESSAGE Option fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.noexceptions is no longer supported
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 4 0 2024-09-30 21:36:03.722
+!MESSAGE Option fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.nortti is no longer supported
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 2 0 2024-09-30 21:36:03.722
+!MESSAGE Value type err, id: gnu.cpp.link.option.flags
+
+!ENTRY com.st.stm32cube.ide.mcu.converters 2 0 2024-09-30 21:36:03.724
+!MESSAGE Unknown value type "" for id gnu.both.asm.option.include.paths on tool fr.ac6.managedbuild.tool.gnu.cross.assembler
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unknown serialized value type 
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.deserializeValueType(AbstractCubeIDEProjectConfigurator.java:535)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertTool(AbstractCubeIDEProjectConfigurator.java:567)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.convertBuildConfiguration(AbstractCubeIDEProjectConfigurator.java:453)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.configure(AbstractCubeIDEProjectConfigurator.java:190)
+	at com.st.stm32cube.ide.mcu.converters.sw4stm32.SW4STM32ToCubeIDEProjectConfigurator.configure(SW4STM32ToCubeIDEProjectConfigurator.java:710)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.importProjectAndChildrenRecursively(SmartImportJob.java:461)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob$1.run(SmartImportJob.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-30 21:36:08.728
+!MESSAGE Indexed 'STM32F103RB_Nucleo' (9 sources, 17 headers) in 2.34 sec: 955 declarations; 4,662 references; 3 unresolved inclusions; 246 syntax errors; 675 unresolved names (11%)
+!SESSION 2024-09-30 21:56:04.900 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-09-30 21:56:35.266
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-30 21:56:35.276
+!MESSAGE Log4j2 initialized with config file C:\Users\USER\Desktop\24-2\STM\ATOM_Study\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-30 21:56:45.550
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-09-30 22:27:41.931 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\USER\Desktop\24-2\STM\ATOM_Study\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\GPIO\GPIO_IOToggle\SW4STM32\STM32F103RB_Nucleo\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\USER\Desktop\24-2\STM\ATOM_Study\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\GPIO\GPIO_IOToggle\SW4STM32\STM32F103RB_Nucleo\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-09-30 22:27:50.303
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-30 22:27:50.305
+!MESSAGE Log4j2 initialized with config file C:\Users\USER\Desktop\24-2\STM\ATOM_Study\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-30 22:28:00.229
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-30 22:28:04.497
+!MESSAGE Indexed 'STM32F103RB_Nucleo' (9 sources, 25 headers) in 3.17 sec: 1,035 declarations; 5,716 references; 1 unresolved inclusions; 235 syntax errors; 68 unresolved names (1%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-09-30 22:28:17.845
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2024-09-30 22:52:10.706 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\USER\Desktop\24-2\STM\ATOM_Study\ttest\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\USER\Desktop\24-2\STM\ATOM_Study\ttest\.project
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-09-30 22:52:24.713
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-09-30 22:52:52.917
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-30 22:52:52.928
+!MESSAGE Log4j2 initialized with config file C:\Users\USER\Desktop\24-2\STM\ATOM_Study\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-30 22:53:05.134
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-30 22:53:45.996
+!MESSAGE Indexed 'ttest' (512 sources, 291 headers) in 38.3 sec: 35,553 declarations; 318,710 references; 23 unresolved inclusions; 259 syntax errors; 6,648 unresolved names (1.8%)
+
+!ENTRY org.eclipse.core.resources 4 2 2024-09-30 22:54:08.411
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ttest/Debug/Drivers/CMSIS/RTOS2/Source)[368]: java.lang.Exception: Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-09-30 22:54:08.413
+!MESSAGE Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-09-30 22:54:08.413
+!MESSAGE Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2024-09-30 22:54:08.585
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 75 2024-09-30 22:54:08.585
+!MESSAGE Errors running builder 'CDT Builder' on project 'ttest'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ttest/Debug/Drivers/CMSIS/RTOS2/Source)[368]: java.lang.Exception: Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.core.resources 4 368 2024-09-30 22:54:08.585
+!MESSAGE Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-09-30 22:54:08.585
+!MESSAGE Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/ttest/Debug/Drivers/CMSIS/RTOS2/Source' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-09-30 22:57:19.748
+!MESSAGE Won't launch debug session since we failed to locate the binary.
