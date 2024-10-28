@@ -72,15 +72,18 @@ void SetServoDuty(const uint32_t iDuty)
     __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, newCCR);
 
 	// 2024-10-28 hjkim, Update Servo Information
-    gServoInfo.iServoCCR = __HAL_TIM_GET_COMPARE(&htim1, TIM_CHANNEL_1);
-	gServoInfo.iTIM1ARR = __HAL_TIM_GET_AUTORELOAD(&htim1);
-    gServoInfo.iServoDuty = iDuty;
+    gServoInfo.iServoCCR 	= __HAL_TIM_GET_COMPARE(&htim1, TIM_CHANNEL_1);
+	gServoInfo.iTIM1ARR 	= __HAL_TIM_GET_AUTORELOAD(&htim1);
+    gServoInfo.iServoDuty 	= iDuty;
 
 	// 2024-10-28 hjkim, Handle case where duty is 0 (reset pin to Low)
     gServoInfo.enumPinServo = (iDuty == 0) ? GPIO_PIN_RESET : gServoInfo.enumPinServo;
 
     // 2024-10-28 hjkim, Set GPIO A5 pin based on duty cycle (Low if duty is 0, otherwise keep current state)
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, gServoInfo.enumPinServo);
+    if(gServoInfo.enumPinServo == GPIO_PIN_RESET)
+    {
+    	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, gServoInfo.enumPinServo);
+    }
 
 	// 2024-10-28 hjkim, Retrieve duty cycle using HAL macros, this method is recommended
 	//gServoInfo.iServoCCR 	= __HAL_TIM_GET_COMPARE(&htim1, TIM_CHANNEL_1);
@@ -186,6 +189,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     {
         // 2024-10-28 hjkim, Toggle GPIO pin A5 for Channel 1
         gServoInfo.enumPinServo = GPIO_PIN_SET;
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, gServoInfo.enumPinServo);
     }
     else if (htim->Instance == TIM2)
     {
@@ -219,6 +223,7 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
 	        {
 	            case HAL_TIM_ACTIVE_CHANNEL_1:
 	            	gServoInfo.enumPinServo = GPIO_PIN_RESET;
+	            	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, gServoInfo.enumPinServo);
 	                break;
 	            case HAL_TIM_ACTIVE_CHANNEL_2:
 	                // 2024-10-28 hjkim, Error: Channel 2 is not used
